@@ -1,0 +1,186 @@
+.navigation-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #44230b;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .addtocart {
+    background-color: green;
+    color: wheat;
+  }
+
+  #navigationPanel {
+    z-index: 1000;
+  }
+
+  #menu {
+    z-index: 1;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    overflow: scroll;
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+  }
+  
+  .nav-list-item {
+    float: right;
+  }
+  
+  .nav-list-item-anchor {
+    display: block;
+    color: white;
+    padding: 0px 16px;
+    text-decoration: none;
+  }
+
+  .nav-list-item-header {
+    display: block;
+    color: white;
+    padding: 0px 15px;
+    text-decoration: none;
+  }
+  
+  .nav-list-item-anchor:hover {
+    background-color: #111;
+  }
+  
+  
+  .overlay {
+    min-height: 79vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+.marquee-list{
+  color: gold;
+}
+  .overlay-text {
+      color: yellow;
+      font-weight: 900;
+      margin: 2rem 3rem 0;
+      mix-blend-mode: screen;
+      padding: 5px 15px;
+      text-align: center;
+      opacity: 0.8;
+  }
+
+  .overlay-button {
+    font-weight: 900;
+    margin: 4rem 4rem 0 4rem;
+    mix-blend-mode: screen;
+    padding: 15px 30px;
+    text-align: center;
+    color: yellow;
+    background-color: purple;
+    border-radius: 10px;
+    border: 4 px solid purple;
+    opacity: 8.0;
+
+   
+}
+.overlay-button:hover {
+    transition-duration: 0.4ms;
+    translate: (1.5);
+}
+
+  video {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    
+  }
+
+  .founder {
+    height: 100vh;
+    width: 100vw;
+  }
+  .margin-1 {
+    margin: 1%;
+
+  }
+
+  .padding-1 {
+    margin: 1%;
+    
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+ td {
+  text-align: center;
+  margin-top: 5px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+
+ }
+
+ .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 100px 16px;
+}
+
+span {
+  content: "\2022";
+}

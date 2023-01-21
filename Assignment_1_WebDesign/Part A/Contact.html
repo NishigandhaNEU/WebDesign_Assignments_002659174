@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+
+    <title>Casa Blanka Mexican Restaurant</title>
+    <link rel="stylesheet" href="PartAforRestaurant.css" />
+    <link rel="stylesheet" href="../css/bgcolor.css" />
+    <link rel="stylesheet" href="../css/color.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./resources/favicon1.ico">
+
+
+    <script>
+    </script>
+  </head>
+
+  <body>
+
+    <header id="navigationPanel">
+
+      <h1 class="color-white">Casa Blanka Mexican Restaurant</h1>
+
+      <ul class="navigation-list">
+        <li><a class="nav-list-item-header font-larger" href="#"><h1><img src="./resources/CasaBlanca_MASTER1.png" alt="restaurant icon"/> Casa Blanka Mexican Restaurant </h1></a></li>
+        <li><h3><marquee class="marquee-list">Welcome to Casa Blanka !!!!!!!.</marquee></h3></li>
+        <li class="nav-list-item"><a class="nav-list-item-anchor" href="./index.html">Home</a></li>
+        <li class="nav-list-item"><a class="nav-list-item-anchor" href="./Visit.html">Visit</a></li>
+        <li class="nav-list-item"><a class="nav-list-item-anchor" href="./About.html">About</a></li>
+        <li class="nav-list-item"><a class="nav-list-item-anchor" href="./Order.html">Order Food</a></li>
+        <li class="nav-list-item"><a class="nav-list-item-anchor" href="#">Contact Us</a></li>
+        
+
+         
+          
+      </ul>
+
+  </header>
+  <section id="contactus" class="founder">
+
+    <div class="container" >
+        
+
+      <h2 class="text-align-center margin-1 padding-1" style="color:purple"> Contact Us </h2>
+
+      <form>
+        <label>First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Insert your first name">
+    
+        <label>Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Insert your last name">
+    
+        <label>Country</label>
+        <select id="country" name="country">
+          <option value="australia">India</option>
+          <option value="canada">Germany</option>
+          <option value="usa">USA</option>
+          <option value="usa">Netherlands</option>
+          <option value="usa">Mexico</option>
+          <option value="usa">Brazil</option>
+
+        </select>
+    
+        <label>Feedback</label>
+        <textarea id="subject" name="subject" placeholder="Please add your feedback here !!!!!!!" style="height:200px"></textarea>
+        <div class="popup" onclick="myFunction()">Submit
+           
+            <span class="popuptext" id="myPopup"> Your feedback is submitted !!!!!!!!!</span>
+          </div>
+        <!-- <input class="popuptext" id="myPopup"  type="submit" value="Submit"> -->
+      </form>
+    </div>
+
+  </section>
+    
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+      </body>
+    </html>
