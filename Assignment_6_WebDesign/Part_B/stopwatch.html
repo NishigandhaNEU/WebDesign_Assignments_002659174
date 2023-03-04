@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+  
+
+</head>
+<style>
+
+.container {
+        width: 1000px;
+        margin: auto;
+        background-color: lightseagreen;
+      }
+      body {
+        text-align: center;
+      }
+
+      main {
+        padding: 50px;
+      }
+     
+      .field_set{
+    border-color: rgb(245, 255, 109);
+    border-style: solid;
+    }
+      #timer {
+        text-align: center;
+        font-size: 65px;
+        font-weight: 400;
+      }
+
+      .label {
+        display: inline-block;
+        min-width: 500px;
+        font-weight: bolder;
+      }
+      button:hover {
+        background-color: rgb(245, 255, 109);
+        color: black;
+      }
+      button {
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border: 2px solid #555555;
+      }
+     
+
+
+
+</style>
+
+<div class="container">
+    <main>
+        <h2 style="text-align: center">Assignment 6 | Part B</h2>
+        <h3 style="text-align: center">Use the below Simple Stop Watch</h3>
+        <fieldset class="field_set">
+          <legend style="text-align: left; color: rgb(245, 255, 109);">Stop Watch</legend>
+          <br />
+    <div class="timer-container">
+      <label style="font-weight: bolder; font-size:100px;">Time:</label>
+      <input id="timer" type="text" value="00:00:00" readonly>
+    </div>
+  
+    <div class="button-container">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="reset">Reset</button>
+    </div>
+    </fieldset>
+    </main>
+  </div>
+
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+const timer = document.getElementById("timer");
+const startBtn = document.getElementById("start");
+const stopBtn = document.getElementById("stop");
+const resetBtn = document.getElementById("reset");
+
+let intervalId;
+let startTime;
+let elapsedTime = 0;
+
+function formatTime(time) {
+  const date = new Date(time);
+  const hours = date.getUTCHours().toString().padStart(2, "0");
+  const minutes = date.getUTCMinutes().toString().padStart(2, "0");
+  const seconds = date.getUTCSeconds().toString().padStart(2, "0");
+  return `${hours}:${minutes}:${seconds}`;
+}
+
+async function startTimer() {
+  startTime = Date.now() - elapsedTime;
+  intervalId = setInterval(() => {
+    elapsedTime = Date.now() - startTime;
+    timer.value = formatTime(elapsedTime);
+  }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(intervalId);
+}
+
+function resetTimer() {
+  clearInterval(intervalId);
+  elapsedTime = 0;
+  timer.value = "00:00:00";
+}
+
+startBtn.addEventListener("click", async () => {
+  await startTimer();
+});
+
+stopBtn.addEventListener("click", () => {
+  stopTimer();
+});
+
+resetBtn.addEventListener("click", () => {
+  resetTimer();
+});
+
+</script>
+
+  

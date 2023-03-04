@@ -1,0 +1,103 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    
+    border: 3px solid rgb(185, 37, 37);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+main {
+    padding: 50px;
+  }
+
+
+
+  .button1:hover {
+    color: white;
+    background-color: rgb(185, 37, 37);;        
+  }
+.button:hover {
+    color: white;
+    background-color: rgb(185, 37, 37);;        
+  }
+
+
+  .parent {
+    height: 1000px;
+    background: cornsilk;
+    display: flex;
+   
+    justify-content: center;
+}
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    font-weight: bold;
+    color:rgb(185, 37, 37);
+}
+.child {
+    text-align: left;
+    width: 500px;
+    height: 600px;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+}
+#username1{
+    float:right;
+}
+
+.field_set{
+    border-color: rgb(185, 37, 37);
+    border-style: solid;
+    }
+
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid rgb(185, 37, 37);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.button {
+    text-decoration: none;
+    padding: 16px 32px;
+    transition-duration: 0.4s;
+    text-align: center;
+    margin: 4px 2px;
+    color: black;        
+    display: inline-block;        
+    cursor: pointer;
+    border: 2px solid rgb(185, 37, 37);
+    font-size: 16px;
+    background-color: burlywood;
+}
+
+.button1 {
+    text-decoration: none;
+    padding: 15px 27px;
+    transition-duration: 0.4s;
+    text-align: center;
+    margin: 4px 2px;
+    color: black;        
+    display: inline-block;        
+    cursor: pointer;
+    border: 2px solid rgb(185, 37, 37);
+    font-size: 18px;
+    background-color: burlywood;
+}
+
